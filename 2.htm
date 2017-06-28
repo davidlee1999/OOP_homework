@@ -1,0 +1,22 @@
+<html>
+	<script>
+        function Student(s1, s2, s3,s4)
+        {
+            this.name = s1;
+            this.a = s2;
+            this.b = s3;
+            this.c = s4;
+            this.average = 0;
+            this.calc_average =function()
+            {
+                this.average = (this.a+this.b+this.c)/3;
+            }
+        }
+
+		var a = new Student("Tom", 95, 88, 92);
+		a.calc_average();
+		document.write(a.name + "'s average score: ");
+        //document.write(a.a);        
+        document.write(a.average);
+	</script>
+</html>
